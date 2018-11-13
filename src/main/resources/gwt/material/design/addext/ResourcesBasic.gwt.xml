@@ -26,4 +26,6 @@
 	</public>
 
 	<stylesheet src="fontawesome/css/all.css" />
+
+	<stylesheet src="materialdesignicons/materialdesignicons.min.css" />
 </module>
