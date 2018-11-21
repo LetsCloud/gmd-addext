@@ -23,9 +23,12 @@
 		<include name="fontawesome/sprites/*" />
 		<include name="fontawesome/svgs/*" />
 		<include name="fontawesome/webfonts/*" />
+		<include name="mdi/css/*" />
+		<include name="mdi/fonts/*" />
+		<include name="mdi/scss/*" />
 	</public>
 
 	<stylesheet src="fontawesome/css/all.css" />
 
-	<stylesheet src="materialdesignicons/materialdesignicons.min.css" />
+	<stylesheet src="mdi/css/materialdesignicons.min.css" />
 </module>
