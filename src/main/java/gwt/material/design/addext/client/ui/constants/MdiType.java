@@ -36,7 +36,7 @@ public enum MdiType implements CssType {
 	EYE_OUTLINE("mdi-eye-outline"), SETTINGS_OUTLINE("mdi-settings-outline"),
 	CHECK_CIRCLE_OUTLINE("mdi-check-circle-outline"), STAR_CIRCLE_OUTLINE("mdi-star-circle-outline"),
 	CLOSE_CIRCLE_OUTLINE("mdi-close-circle-outline"), ALPHA_E_BOX("mdi-alpha-e-box"), ALPHA_L_BOX("mdi-alpha-l-box"),
-	ACCOUNT_BOX("mdi-account-box"), SETTING_BOX("mdi-setting-box"), EYE("mdi-eye"), CLOSE_BOX("mdi-close-box"),
+	ACCOUNT_BOX("mdi-account-box"), SETTINGS_BOX("mdi-settings-box"), EYE("mdi-eye"), CLOSE_BOX("mdi-close-box"),
 	CHECKBOX_BLANK("mdi-checkbox-blank");
 
 	private final String cssClass;
