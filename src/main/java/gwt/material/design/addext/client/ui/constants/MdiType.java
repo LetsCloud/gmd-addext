@@ -31,12 +31,29 @@ import gwt.material.design.client.constants.CssType;
  */
 public enum MdiType implements CssType {
 
-	DEFAULT(""), DELETE_CIRCLE_OUTLINE("mdi-delete-circle-outline"), ACCOUNT("mdi-account"), BRUSH("mdi-brush"),
-	WRENCH("mdi-wrench"), ARROW_UP_BOX("mdi-arrow-up-box"), ARROW_DOWN_BOX("mdi-arrow-down-box"),
+	ACCOUNT("mdi-account"), 
+	ACCOUNT_BOX("mdi-account-box"), 
+	ALPHA_E_BOX("mdi-alpha-e-box"), 
+	ALPHA_L_BOX("mdi-alpha-l-box"),
+	ARROW_UP_BOX("mdi-arrow-up-box"), 
+	ARROW_DOWN_BOX("mdi-arrow-down-box"),
+	BRUSH("mdi-brush"),
+	CHECK("mdi-check"), 
+	CHECK_OUTLINE("mdi-check-outline"), 
+	CHECK_CIRCLE_OUTLINE("mdi-check-circle-outline"), 
+	CLOSE("mdi-close"), 
+	CLOSE_OUTLINE("mdi-close-outline"), 
+	CLOSE_CIRCLE_OUTLINE("mdi-close-circle-outline"), 
+	DEFAULT(""), 
+	DELETE("mdi-delete"), 
+	DELETE_OUTLINE("mdi-delete-outline"),
+	DELETE_CIRCLE_OUTLINE("mdi-delete-circle-outline"), 
+	WRENCH("mdi-wrench"), 
 	EYE_OUTLINE("mdi-eye-outline"), SETTINGS_OUTLINE("mdi-settings-outline"),
-	CHECK_CIRCLE_OUTLINE("mdi-check-circle-outline"), STAR_CIRCLE_OUTLINE("mdi-star-circle-outline"),
-	CLOSE_CIRCLE_OUTLINE("mdi-close-circle-outline"), ALPHA_E_BOX("mdi-alpha-e-box"), ALPHA_L_BOX("mdi-alpha-l-box"),
-	ACCOUNT_BOX("mdi-account-box"), SETTINGS_BOX("mdi-settings-box"), EYE("mdi-eye"), CLOSE_BOX("mdi-close-box"),
+	STAR("mdi-star"),
+	STAR_OUTLINE("mdi-star-outline"),
+	STAR_CIRCLE_OUTLINE("mdi-star-circle-outline"),
+	SETTINGS_BOX("mdi-settings-box"), EYE("mdi-eye"), CLOSE_BOX("mdi-close-box"),
 	CHECKBOX_BLANK("mdi-checkbox-blank");
 
 	private final String cssClass;
