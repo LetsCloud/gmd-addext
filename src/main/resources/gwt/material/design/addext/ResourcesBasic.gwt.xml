@@ -16,14 +16,18 @@
 	<!-- public resources -->
 	<public path="public">
 		<include name="fontawesome/css/*" />
-		<include name="fontawesome/js/*" />
+<!-- 		<include name="fontawesome/js/*" />
 		<include name="fontawesome/less/*" />
 		<include name="fontawesome/metadata/*" />
 		<include name="fontawesome/scss/*" />
 		<include name="fontawesome/sprites/*" />
-		<include name="fontawesome/svgs/*" />
+		<include name="fontawesome/svgs/*" /> -->
 		<include name="fontawesome/webfonts/*" />
+		<include name="mdi/css/*" />
+		<include name="mdi/fonts/*" />
 	</public>
 
-	<stylesheet src="fontawesome/css/all.css" />
+	<stylesheet src="fontawesome/css/all.min.css" />
+
+	<stylesheet src="mdi/css/materialdesignicons.min.css" />
 </module>
