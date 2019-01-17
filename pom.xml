@@ -18,6 +18,7 @@
         <gwt-material.version>2.1.1</gwt-material.version>
     </properties>
 
+
     <dependencies>
         <!-- GwtMaterial -->
         <dependency>
