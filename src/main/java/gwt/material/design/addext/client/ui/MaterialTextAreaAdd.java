@@ -52,6 +52,7 @@ public class MaterialTextAreaAdd extends MaterialTextArea {
 		rightIcon.setLayoutPosition(Position.ABSOLUTE);
 		rightIcon.setTop(0);
 		rightIcon.setRight(0);
+		rightIcon.setMarginRight(5);
 		add(rightIcon);
 //		this.getChildrenList().get(0).getElement().getStyle().setPaddingRight(44, Unit.PX);
 	}
