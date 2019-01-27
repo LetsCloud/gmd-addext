@@ -78,7 +78,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 		super("");
 		this.addStyleName(AwesomeIconStyle.SOLID.getCssName());
 		initClass = AwesomeIconStyle.SOLID.getCssName();
-		logger.info("MaterialAwesomeIcon(" + initClass + ")");
 	}
 
 	/**
@@ -86,7 +85,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconType iconType) {
 		this();
-		logger.info("MaterialAwesomeIcon2()");
 		setIconType(iconType);
 	}
 
@@ -95,7 +93,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconType iconType, Color bgColor) {
 		this(iconType);
-		logger.info("MaterialAwesomeIcon3()");
 		setBackgroundColor(bgColor);
 	}
 
@@ -104,7 +101,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconType iconType, Color textColor, Color bgColor) {
 		this(iconType, bgColor);
-		logger.info("MaterialAwesomeIcon4()");
 		setTextColor(textColor);
 	}
 
@@ -113,7 +109,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconStyle iconStyle, AwesomeIconType iconType) {
 		super(iconStyle.getCssName());
-		logger.info("MaterialAwesomeIcon5()");
 		initClass = iconStyle.getCssName();
 		setIconType(iconType);
 	}
@@ -123,7 +118,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconStyle iconStyle, AwesomeIconType iconType, Color bgColor) {
 		this(iconStyle, iconType);
-		logger.info("MaterialAwesomeIcon6()");
 		setBackgroundColor(bgColor);
 	}
 
@@ -132,7 +126,6 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 	 */
 	public MaterialAwesomeIcon(AwesomeIconStyle iconStyle, AwesomeIconType iconType, Color textColor, Color bgColor) {
 		this(iconStyle, iconType, bgColor);
-		logger.info("MaterialAwesomeIcon7()");
 		setTextColor(textColor);
 	}
 
@@ -147,37 +140,27 @@ public class MaterialAwesomeIcon extends AbstractButton implements HasSeparator,
 
 	@Override
 	public MaterialAwesomeIcon getIcon() {
-		logger.info("MaterialAwesomeIcon().getIcon()");
 		return this;
 	}
 
 	public AwesomeIconType getIconType() {
-		logger.info("MaterialAwesomeIcon().getIconType()");
 		return AwesomeIconType.fromStyleName(iconClass);
 	}
 
 	@Override
 	public void setIconType(AwesomeIconType iconType) {
-		logger.info("MaterialAwesomeIcon().setIconType(" + iconType.getCssName() + ")");
 		checkIconStyle(iconType);
-		logger.info("MaterialAwesomeIcon().setIconType2()->getClassName()=" + getElement().getClassName());
 		if ((iconClass != null) && (!iconClass.isEmpty()))
 			removeStyleName(iconClass);
-		logger.info("MaterialAwesomeIcon().setIconType3()->getClassName()=" + getElement().getClassName());
 		addStyleName(iconType.getCssName());
-		logger.info("MaterialAwesomeIcon().setIconType4()->getClassName()=" + getElement().getClassName());
 		iconClass = iconType.getCssName();
 	}
 
 	private void checkIconStyle(AwesomeIconType iconType) {
-		logger.info("MaterialAwesomeIcon().checkIconStyle(" + AwesomeIconType.getStyle(iconType).getCssName() + ")");
 		if ((initClass != null) && (!initClass.isEmpty())
 				&& (!initClass.equals(AwesomeIconType.getStyle(iconType).getCssName()))) {
-			logger.info("MaterialAwesomeIcon().checkIconStyle2()->initClass=" + initClass);
-			logger.info("MaterialAwesomeIcon().checkIconStyle3()->getClassName()=" + getElement().getClassName());
 			removeStyleName(initClass);
 			addStyleName(AwesomeIconType.getStyle(iconType).getCssName());
-			logger.info("MaterialAwesomeIcon().checkIconStyle4()->getClassName()=" + getElement().getClassName());
 			initClass = AwesomeIconType.getStyle(iconType).getCssName();
 		}
 	}
