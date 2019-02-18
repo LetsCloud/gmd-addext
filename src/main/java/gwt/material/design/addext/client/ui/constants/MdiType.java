@@ -56,6 +56,7 @@ public enum MdiType implements CssType {
 	DELETE("mdi-delete"), 
 	DELETE_OUTLINE("mdi-delete-outline"),
 	DELETE_CIRCLE_OUTLINE("mdi-delete-circle-outline"),
+	DO_NOT_DISTURB("mdi-do-not-disturb"),
 	HOTEL("mdi-hotel"), 
 	EYE("mdi-eye"),	EYE_OUTLINE("mdi-eye-outline"), 
 	STAR("mdi-star"),
