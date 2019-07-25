@@ -1,4 +1,7 @@
-/.settings/
 /target/
-/.classpath
-/.project
+
+### Eclipse ###
+/.settings/
+.classpath
+.project
+
