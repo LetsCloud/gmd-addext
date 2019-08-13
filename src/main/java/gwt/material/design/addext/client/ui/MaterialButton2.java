@@ -74,4 +74,16 @@ public class MaterialButton2 extends AbstractIconButton2 {
     protected Element createElement() {
         return Document.get().createPushButtonElement();
     }
+
+	@Override
+	public void setCustomIconType(String iconType) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getCustomIconType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
