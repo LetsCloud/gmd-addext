@@ -32,7 +32,8 @@ import gwt.material.design.client.constants.CssType;
 public enum MdiType implements CssType {
 
 	ACCOUNT("mdi-account"), 
-	ACCOUNT_BOX("mdi-account-box"), 
+	ACCOUNT_BOX("mdi-account-box"),
+	ALERT("mdi-alert"),
 	ALPHA_E_BOX("mdi-alpha-e-box"), 
 	ALPHA_L_BOX("mdi-alpha-l-box"),
 	ARROW_DOWN_BOX("mdi-arrow-down-box"),
